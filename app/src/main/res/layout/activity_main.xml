@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -44,7 +44,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -59,7 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -74,7 +74,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -103,7 +103,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -118,7 +118,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -133,7 +133,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -148,7 +148,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -177,7 +177,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -192,7 +192,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -207,7 +207,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -222,7 +222,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -251,7 +251,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -266,7 +266,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -281,7 +281,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -296,7 +296,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -325,7 +325,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -340,7 +340,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -355,7 +355,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -370,7 +370,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -399,7 +399,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -414,7 +414,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -429,7 +429,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
@@ -444,7 +444,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:longClickable="true"
+                android:longClickable="false"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 app:srcCompat="@drawable/button" />
