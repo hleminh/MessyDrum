@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
         appContext = getApplicationContext();
 
+        SoundManager.loadSoundIntoList(appContext);
+
         drumPads = new ArrayList<>();
 
         drumPads.add(new DrumPad((ImageView) findViewById(R.id.button1)));
@@ -73,18 +75,6 @@ public class MainActivity extends AppCompatActivity {
         drumPads.add(new DrumPad((ImageView) findViewById(R.id.button10)));
         drumPads.add(new DrumPad((ImageView) findViewById(R.id.button11)));
         drumPads.add(new DrumPad((ImageView) findViewById(R.id.button12)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button13)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button14)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button15)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button16)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button17)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button18)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button19)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button20)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button21)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button22)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button23)));
-        drumPads.add(new DrumPad((ImageView) findViewById(R.id.button24)));
 
     }
 
@@ -102,12 +92,13 @@ public class MainActivity extends AppCompatActivity {
                     PressedKeyInfo el = pressedKeyInfos.get(i);
                     if (el.getPointerId() == pointerId && !isInside(pointerX, pointerY, el.getIvKey().getButton())) {
                         pressedKeyInfos.remove(i);
+                        i--;
                         setPressed(el.getIvKey(), false);
                     }
                 }
                 for (DrumPad el : drumPads) {
                     if (isInside(pointerX, pointerY, el.getButton())) {
-                        if(!containKeyInfoWith(el)) {
+                        if (!containKeyInfoWith(el)) {
                             new PressedKeyInfo(el, pointerId);
                             setPressed(el, true);
                         }
@@ -136,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     if (pointerId == pressedKeyInfos.get(i).pointerId) {
                         pressedKeyInfos.remove(i);
                         setPressed(pressedKey, false);
+                        i--;
                     }
                 }
             }
@@ -151,13 +143,10 @@ public class MainActivity extends AppCompatActivity {
     private void setPressed(DrumPad ivKey, boolean isPressed) {
         if (isPressed) {
             ivKey.changeColor();
-            ivKey.getPlayer().start();
+            SoundManager.playSound(ivKey);
         } else {
             ivKey.undoColorChange();
-            if (ivKey.getPlayer().isPlaying()) {
-                ivKey.getPlayer().pause();
-                ivKey.getPlayer().seekTo(0);
-            }
+            SoundManager.stopSound(ivKey);
         }
     }
 

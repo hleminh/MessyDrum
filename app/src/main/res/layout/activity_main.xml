@@ -11,7 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/background">
+        android:background="@drawable/bg_default">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,8 +35,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="1"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -45,8 +51,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="2"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -60,8 +67,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="3"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -69,15 +77,6 @@
             <!--android:layout_height="match_parent"-->
             <!--android:layout_weight="0.05" />-->
 
-            <ImageView
-                android:id="@+id/button4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
 
             <!--<View-->
             <!--android:layout_width="0dp"-->
@@ -99,13 +98,30 @@
             <!--android:layout_weight="0.05" />-->
 
             <ImageView
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="false"
+                
+                android:scaleType="fitXY"
+                android:tag="4"
+                app:srcCompat="@drawable/button" />
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
+
+            <ImageView
                 android:id="@+id/button5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="5"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -119,9 +135,30 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="6"
                 app:srcCompat="@drawable/button" />
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
+
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <!--<View-->
             <!--android:layout_width="0dp"-->
@@ -134,8 +171,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="7"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -149,9 +187,32 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="8"
                 app:srcCompat="@drawable/button" />
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
+
+            <ImageView
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="false"
+                
+                android:scaleType="fitXY"
+                android:tag="9"
+                app:srcCompat="@drawable/button" />
+
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
+
 
             <!--<View-->
             <!--android:layout_width="0dp"-->
@@ -173,28 +234,14 @@
             <!--android:layout_weight="0.05" />-->
 
             <ImageView
-                android:id="@+id/button9"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
                 android:id="@+id/button10"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="10"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -208,8 +255,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="11"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -223,8 +271,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
+                
+                android:scaleType="fitXY"
+                android:tag="12"
                 app:srcCompat="@drawable/button" />
 
             <!--<View-->
@@ -232,231 +281,17 @@
             <!--android:layout_height="match_parent"-->
             <!--android:layout_weight="0.05" />-->
 
+            <!--<View-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.05" />-->
 
         </LinearLayout>
 
-        <LinearLayout
+        <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button13"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button14"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button15"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button16"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button17"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button18"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button19"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button21"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button22"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button23"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-            <ImageView
-                android:id="@+id/button24"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="false"
-                android:paddingLeft="2dp"
-                android:paddingRight="2dp"
-                app:srcCompat="@drawable/button" />
-
-            <!--<View-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="0.05" />-->
-
-
-        </LinearLayout>
-
+            android:layout_weight="0.4" />
 
     </LinearLayout>
 
